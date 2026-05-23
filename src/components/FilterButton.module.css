@@ -7,7 +7,7 @@
   font-weight: var(--fw-500);
 }
 
-.filterBtn:global(.active) {
+.filterBtn.active {
   color: var(--color-primary_300);
   background-color: var(--color-red-light);
   border: transparent;
@@ -17,7 +17,7 @@
   background-color: var(--color-primary_100);
 }
 
-.filterBtn:global(.active):hover {
+.filterBtn.active:hover {
   background-color: var(--color-red);
 }
 
@@ -27,6 +27,6 @@
   outline-offset: var(--btn-outline-offset);
 }
 
-.filterBtn:global(.active):focus-visible {
+.filterBtn.active:focus-visible {
   background-color: var(--color-red-light);
 }

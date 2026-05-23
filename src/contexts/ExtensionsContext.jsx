@@ -12,15 +12,15 @@ function ExtensionProvider({ children }) {
   }
 
   function handleToggleExtension(name) {
-    setExtensions((data) =>
-      data.map((ext) =>
+    setExtensions((curData) =>
+      curData.map((ext) =>
         ext.name === name ? { ...ext, isActive: !ext.isActive } : ext,
       ),
     );
   }
 
   function handleRemoveExtension(name) {
-    setExtensions((data) => data.filter((ext) => ext.name !== name));
+    setExtensions((curData) => curData.filter((ext) => ext.name !== name));
   }
 
   return (

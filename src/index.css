@@ -106,9 +106,8 @@ h4 {
   *,
   *::before,
   *::after {
-    animation-duration: 0.001ms;
-    animation-iteration-count: 1;
-    transition-duration: 0.001ms;
+    animation: none !important;
+    transition: none !important;
   }
 }
 

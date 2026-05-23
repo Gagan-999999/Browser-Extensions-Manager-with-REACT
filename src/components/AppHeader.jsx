@@ -26,10 +26,11 @@ function AppHeader() {
         )}
       </a>
 
-      <button type="button" onClick={toggleTheme}>
-        <p className="sr-only" aria-live="polite">
-          {`Switch to ${isDark ? "light" : "dark"} theme`}
-        </p>
+      <button
+        type="button"
+        onClick={toggleTheme}
+        aria-label={`Switch to ${isDark ? "light" : "dark"} theme`}
+      >
         <img
           src={`icon-${isDark ? "sun" : "moon"}.svg`}
           alt=""
