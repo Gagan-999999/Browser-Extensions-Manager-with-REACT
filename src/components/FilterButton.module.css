@@ -1,0 +1,32 @@
+.filterBtn {
+  color: var(--color-secondary_200);
+  background-color: var(--color-primary_200);
+  padding: 1rem 2rem;
+  border-radius: 99rem;
+  border: 1px solid var(--color-primary_100);
+  font-weight: var(--fw-500);
+}
+
+.filterBtn:global(.active) {
+  color: var(--color-primary_300);
+  background-color: var(--color-red-light);
+  border: transparent;
+}
+
+.filterBtn:hover {
+  background-color: var(--color-primary_100);
+}
+
+.filterBtn:global(.active):hover {
+  background-color: var(--color-red);
+}
+
+.filterBtn:focus-visible {
+  background-color: var(--color-primary_100);
+  outline: var(--btn-outline) solid var(--color-red-light);
+  outline-offset: var(--btn-outline-offset);
+}
+
+.filterBtn:global(.active):focus-visible {
+  background-color: var(--color-red-light);
+}

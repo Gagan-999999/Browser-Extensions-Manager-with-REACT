@@ -1,0 +1,38 @@
+.switchBtn {
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--color-primary_100);
+  border-radius: 99rem;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 200ms;
+}
+
+.switchBtn::after {
+  content: "";
+  position: absolute;
+  height: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-toggle-slider);
+  margin: 0.25rem;
+  transition: transform 200ms;
+}
+
+.switchBtn:has(input[type="checkbox"]:checked) {
+  background-color: var(--color-red);
+}
+
+.switchBtn:has(input[type="checkbox"]:checked)::after {
+  transform: translateX(2rem);
+}
+
+.switchBtn:has(input[type="checkbox"]:checked):hover {
+  background-color: var(--color-red-dark);
+}
+
+.switchBtn:has(input[type="checkbox"]:focus-visible) {
+  outline: var(--btn-outline) solid var(--color-red-light);
+  outline-offset: var(--btn-outline-offset);
+  border: 10px;
+}

@@ -1,0 +1,53 @@
+.extensionListItem {
+  background-color: var(--color-primary_300);
+  border: 1px solid var(--color-primary_100);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  height: 100%;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.extensionListItem header {
+  display: flex;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.description h2 {
+  font-size: 2rem;
+  padding-block-end: 0.8rem;
+}
+
+.description p {
+  font-size: 1.5rem;
+  color: var(--color-secondary_100);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer button {
+  border: 1px solid var(--color-primary_100);
+  background-color: var(--color-primary_300);
+  color: var(--color-secondary_200);
+  padding: 0.5rem 1.5rem;
+  border-radius: 99rem;
+  font-size: 1.5rem;
+}
+
+.footer button:hover {
+  background-color: var(--color-red);
+}
+
+.footer button:focus-visible {
+  background-color: var(--color-primary_100);
+  outline: var(--btn-outline) solid var(--color-red-light);
+  outline-offset: var(--btn-outline-offset);
+}

@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 4rem 3rem;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 600vw */
+@media screen and (min-width: 37.5rem) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
